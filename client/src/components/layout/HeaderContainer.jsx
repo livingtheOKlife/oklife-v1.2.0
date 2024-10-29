@@ -32,8 +32,7 @@ function HeaderContainer () {
       setAlertActive(`Log out failed - ${error}`, 'error')
     }
   }
-  // return !pathMatchRoute('/') && !pathMatchRoute('/register') && !pathMatchRoute('/login') && !pathMatchRoute('/forgot-password') && !pathMatchRoute('/reset-password') && !pathMatchRoute('/about') && !pathMatchRoute('/page-not-found') &&
-  return (
+  return !pathMatchRoute('/') && !pathMatchRoute('/register') && !pathMatchRoute('/login') && !pathMatchRoute('/forgot-password') && !pathMatchRoute('/reset-password') && !pathMatchRoute('/about') && !pathMatchRoute('/page-not-found') &&
     <header id="header-container">
       <nav id="header-nav">
         <span id="brand"><em>OK</em>life</span>
@@ -80,7 +79,7 @@ function HeaderContainer () {
           }
         </ul>
       </nav>
-    </header>)
+    </header>
 }
 
 export default HeaderContainer

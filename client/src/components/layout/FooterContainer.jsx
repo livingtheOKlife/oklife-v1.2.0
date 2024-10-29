@@ -10,8 +10,7 @@ function FooterContainer () {
       return true
     }
   }
-  // return !pathMatchRoute('/') && !pathMatchRoute('/register') && !pathMatchRoute('/login') && !pathMatchRoute('/forgot-password') && !pathMatchRoute('/reset-password') && !pathMatchRoute('/about') && !pathMatchRoute('/page-not-found') &&
-  return (
+  return !pathMatchRoute('/') && !pathMatchRoute('/register') && !pathMatchRoute('/login') && !pathMatchRoute('/forgot-password') && !pathMatchRoute('/reset-password') && !pathMatchRoute('/about') && !pathMatchRoute('/page-not-found') &&
     <footer id="footer-container">
       <nav id="footer-nav">
         <ul className="footer-nav-list">
@@ -19,7 +18,7 @@ function FooterContainer () {
             <PiBarbell className='footer-nav-icon' />
             <span className="footer-nav-text">explore</span>
           </li>
-          <li className={`footer-nav-item ${pathMatchRoute('/explore') ? 'active' : ''} active`} onClick={() => navigate('/explore')}>
+          <li className={`footer-nav-item ${pathMatchRoute('/explore') ? 'active' : ''}`} onClick={() => navigate('/explore')}>
             <PiCompass className='footer-nav-icon' />
             <span className="footer-nav-text">explore</span>
           </li>
@@ -29,7 +28,7 @@ function FooterContainer () {
           </li>
         </ul>
       </nav>
-    </footer>)
+    </footer>
 }
 
 export default FooterContainer
