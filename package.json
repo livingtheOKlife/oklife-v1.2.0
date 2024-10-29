@@ -1,0 +1,52 @@
+{
+  "name": "oklife",
+  "version": "1.2.0",
+  "description": "health tracker, fitness tracker, diet tracker, and habits tracker on a social media platform.",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node backend/server.js",
+    "server": "nodemon backend/server.js",
+    "client": "npm run dev --prefix frontend",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/livingtheOKlife/oklife-v1.2.0.git"
+  },
+  "keywords": [
+    "livingtheoklife",
+    "oklife",
+    "health",
+    "fitness",
+    "diet",
+    "habits",
+    "tracker",
+    "social",
+    "media"
+  ],
+  "author": "livingtheOKlife",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/livingtheOKlife/oklife-v1.2.0/issues"
+  },
+  "homepage": "https://github.com/livingtheOKlife/oklife-v1.2.0#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cookie-parser": "^1.4.7",
+    "crypto": "^1.0.1",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1",
+    "express-async-handler": "^1.2.0",
+    "jsonwebtoken": "^9.0.2",
+    "mailtrap": "^3.4.0",
+    "mongoose": "^8.7.3",
+    "multer": "^1.4.5-lts.1",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {
+    "concurrently": "^9.0.1",
+    "nodemon": "^3.1.7"
+  }
+}
