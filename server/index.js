@@ -11,6 +11,7 @@ import connectDB from './config/database.config.js'
 import authRoutes from './routes/auth.routes.js'
 import userRoutes from './routes/user.routes.js'
 import postRoutes from './routes/post.routes.js'
+import commentRoutes from './routes/comment.routes.js'
 
 const port = process.env.PORT || 5000
 
@@ -24,6 +25,7 @@ app.use('/uploads', express.static(path.join('api/users', 'uploads')))
 app.use('/api/auth', authRoutes)
 app.use('/api/users', userRoutes)
 app.use('/api/post', postRoutes)
+app.use('/api/comment', commentRoutes)
 
 app.get('/', () => console.log('Server is ready'))
 
